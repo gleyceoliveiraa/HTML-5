@@ -12,12 +12,20 @@
         table { 
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td , th { border: 1px solid black;
       padding: 10px; }
      thead , tfoot { 
         background-color: rgba(33, 28, 28, 0.816);
         color: white;
+     }
+
+     thead > tr >th {
+        position: sticky;
+        top: -1px;;
+        background-color:rgba(10, 9, 9, 0.816);
+
      }
       td.num{ 
         text-align: right;
